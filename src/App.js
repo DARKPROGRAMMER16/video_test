@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react'
+import VID from './assets/Coming Soon Reel 1080x1920.mp4'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <Fragment>
+     <h1>hello alins</h1>
+     <video playsInline autoPlay loop muted style={{width:"20%",margin:"auto"}} className="mt-3 mb-3">
+                                <source src={VID} type="video/mp4"/>
+                                your browser does not support tag.
+                            </video>
+   </Fragment>
+    
+  )
 }
 
-export default App;
+export default App
